@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Progress</h1>
+  <select class="custom-select mb-2 mr-sm-2 mb-sm-0" (change)="getChange($event.target.value)">
+    <option value="{{ val.number}}" *ngFor="let val of valueChange">{{ val.name }}</option>
+  </select>
+    
+  <div class="progress">
+    <div class="progress-bar w-{{resultChange}}" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+        {{resultChange}} %
+    </div>
+  </div>
+</div>
+
