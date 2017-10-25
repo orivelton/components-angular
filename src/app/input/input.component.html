@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="container">
+      <h1>Input</h1>
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">Your Name</span>
+        <input type="text" class="form-control" placeholder="Name" aria-describedby="basic-addon1" (input)="inputValue($event.target.value)">
+      </div>
+      <br>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Result name" aria-describedby="basic-addon2" value="{{valuElement}}">
+      </div>
+  </div>
+</div>
+
