@@ -1,0 +1,9 @@
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+        <li *ngFor="let link of linkNameHeader">
+        <a [routerLink]="[link.router]" title="{{link.title}}">{{link.linkName}} </a>
+        </li>
+    </ul>
+</div>
+
+
